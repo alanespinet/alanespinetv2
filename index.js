@@ -31,6 +31,6 @@ app.get('/', (req, res) => {
         data: templateInfo,
         title: 'Full Stack Developer'
     }); 
-})
+});
 
 app.listen( port, () => { console.log('Server is Running') } );

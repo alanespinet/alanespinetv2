@@ -1,0 +1,35 @@
+@mixin zIndex( $index, $position:"relative" ){
+    position: $position;
+    z-index: $index;
+}
+
+@mixin coverAbsolute(){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin zIndexCoverAsolute( $index ){
+    @include zIndex( $index );
+    @include coverAbsolute;
+}
+
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin responsivePhone(){
+    @media (max-width: $phone-max){
+        @content;
+    }
+}
+
+@mixin responsivePhoneSmall(){
+    @media (max-width: $small-phone-max){
+        @content;
+    }
+}

@@ -1,0 +1,27 @@
+.hero {
+    height: 600px;
+    position: relative;
+
+    &__color {
+        height: 100%;
+        background-color: $teal-color;
+        @include zIndex(0);
+        
+    }
+
+    &__image {
+        height: 100%;
+        background-image: url('../images/hero.jpg');
+        background-position: 50% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        @include zIndexCoverAsolute(1);
+    }
+
+    &__content {
+        @include zIndexCoverAsolute(2);
+        @include flexCenter;
+        height: calc(100% - 150px);
+    }
+}

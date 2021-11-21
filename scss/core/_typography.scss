@@ -1,0 +1,40 @@
+* {
+    font-family: $text;
+}
+
+html {
+    font-size: 16px;
+
+    @include responsivePhone {
+        font-size: 12px;
+    }
+}
+
+h1, h2, h3 {
+    font-family: $title;
+}
+
+h1 {
+    font-size: 4rem;
+
+    @include responsivePhoneSmall {
+        font-size: 3rem;
+    }
+
+    &, 
+    & > span {
+        color: $light-color;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    & > span {
+        font-family: $title;
+        display: block;
+        font-size: 2rem;
+
+        @include responsivePhoneSmall {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.sections-separator {
+    height: 200px;
+
+    &--bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    &--trans-to-gray {
+        &__first-ribbon,
+        &__second-ribbon,
+        &__gray {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: $gray-color;
+        }
+
+        &__first-ribbon,
+        &__second-ribbon {
+            opacity: .4;
+        }
+
+        &__first-ribbon {
+            height: 180px;
+            z-index: 12;
+
+            -webkit-clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+        }
+
+        &__second-ribbon {
+            height: 180px;
+            z-index: 12;
+
+            -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+        }
+        
+        &__gray {
+            height: 140px;
+            z-index: 15;
+
+            -webkit-clip-path: polygon(50% 64%, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(50% 64%, 100% 0, 100% 100%, 0 100%, 0 0);
+        }
+    }
+}

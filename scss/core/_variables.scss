@@ -1,0 +1,29 @@
+// COLORS
+
+// Texts and Backgrounds
+$teal-color: #1d4c6b;
+$dark-color: #000000;
+$light-color: #fafafa;
+$gray-color: #f2f2f2;
+
+// For gradients alognside with '$teal-color'
+$light-teal-color: #255270;
+
+// Links, the same for Dark and Light backgrounds
+$link-color: #7390a2;
+$link-color-hover: darken($link-color, 10%);
+
+
+
+// FONTS
+$title: 'Montserrat', sans-serif;
+$text: 'Lato', sans-serif;
+
+
+// SPACES
+$general-spacing: 15px;
+
+
+// BREAKPOINTS
+$phone-max: 767px;
+$small-phone-max: 359px;
