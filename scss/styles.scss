@@ -2,8 +2,10 @@
 @import './core/mixins';
 
 @import './core/typography';
+@import './core/layout';
 
 @import './sections/hero';
+@import './sections/skills';
 
 @import './parts/sections_separator';
 
@@ -12,4 +14,6 @@ body {
     background-color: $gray-color;
     padding: $general-spacing;
     margin: 0;
+
+    padding-bottom: 300px;
 }

@@ -23,5 +23,11 @@
         @include zIndexCoverAsolute(2);
         @include flexCenter;
         height: calc(100% - 150px);
+
+        &__logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
     }
 }

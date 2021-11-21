@@ -1,0 +1,13 @@
+.container {
+    max-width: $container-width;
+    padding: $general-spacing;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.teal-section {
+    background-color: $teal-color;
+}

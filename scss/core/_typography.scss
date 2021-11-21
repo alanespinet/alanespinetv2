@@ -12,6 +12,7 @@ html {
 
 h1, h2, h3 {
     font-family: $title;
+    font-weight: 400;
 }
 
 h1 {
@@ -37,4 +38,21 @@ h1 {
             font-size: 1.5rem;
         }
     }
+}
+
+h2 {
+    font-size: 3rem;
+    color: $teal-color;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p, ul, li {
+    color: $text-color;
+    font-size: $regular-text-size;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 2rem;
 }

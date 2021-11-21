@@ -4,7 +4,49 @@
 
     <div class="hero__content">
         <h1>Alan Espinet <span>Full Stack Developer</span></h1>
+
+        <img src="images/logo.png" class="hero__content__logo" alt="Alan Espinet logo">
     </div><!-- /.hero__content -->
 
     {{> sections-separator_trans-to-gray }}
+</section>
+
+
+<section class="skills">
+    <div class="container">
+        {{#with data.skills_section}}
+            {{#if section_title}}
+                <h2>{{ section_title }}</h2>
+            {{/if}}
+
+            {{#if section_intro}}
+                <p class="text-center">{{ section_intro }}</p>
+            {{/if}}
+        {{/with}}
+    
+        <div class="skills__skillset">
+            <div class="skills__skillset__list skills__skillset__list--left">
+                {{#with data.skills_section.left_skills_box}}
+                    {{> skillbox}}
+                {{/with}}
+            </div>
+
+            <div class="skills__skillset__list skills__skillset__list--right">
+                {{#with data.skills_section.right_skills_box}}
+                    {{> skillbox}}
+                {{/with}}
+            </div>
+        </div>
+
+        {{#if data.skills_section.section_footnote}}
+            <p class="text-center skills__footnote">{{ data.skills_section.section_footnote }}</p>
+        {{/if}}
+    </div>
+</section>
+
+
+<section class="portfolio teal-section">
+    <div class="container">
+
+    </div>
 </section>

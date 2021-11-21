@@ -1,0 +1,25 @@
+{{#if box_title}}
+    <h3>
+        {{#if box_icon}}<i class="{{ box_icon }}"></i>{{/if}}
+        {{ box_title }}
+    </h3>
+{{/if}}
+
+{{#if skills_entries}}
+    <ul class="skills__skillset__list__entries">
+        {{#each skills_entries as | entry |}}
+            <li class="skills__skillset__list__entries__entry">
+                {{#each entry.technologies as | technology |}}
+                    <strong>{{technology.tech}}</strong>
+                    {{#if technology.note}}
+                        ({{technology.note}})
+                    {{/if}}
+                {{/each}}
+
+                {{#if entry.proficiency}}
+                    <span class="skills__skillset__list__entries__entry__proficiency">({{ entry.proficiency }})</span>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}

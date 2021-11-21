@@ -5,6 +5,8 @@ $teal-color: #1d4c6b;
 $dark-color: #000000;
 $light-color: #fafafa;
 $gray-color: #f2f2f2;
+$text-color: #222222;
+$light-border-color: rgba(#999999, .2);
 
 // For gradients alognside with '$teal-color'
 $light-teal-color: #255270;
@@ -22,6 +24,12 @@ $text: 'Lato', sans-serif;
 
 // SPACES
 $general-spacing: 15px;
+
+
+// SIZES
+$container-width: 1600px;
+
+$regular-text-size: 1.2rem;
 
 
 // BREAKPOINTS

@@ -13,6 +13,7 @@ html {
 
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
@@ -37,6 +38,37 @@ h1 > span {
   h1 > span {
     font-size: 1.5rem;
   }
+}
+
+h2 {
+  font-size: 3rem;
+  color: #1d4c6b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p, ul, li {
+  color: #222222;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.teal-section {
+  background-color: #1d4c6b;
 }
 
 .hero {
@@ -76,6 +108,56 @@ h1 > span {
   justify-content: center;
   align-items: center;
   height: calc(100% - 150px);
+}
+.hero__content__logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.skills__skillset {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 100px;
+}
+.skills__skillset__list {
+  flex-basis: calc(50% - 30px);
+  background-color: #fafafa;
+  padding: 25px 45px 65px;
+  box-sizing: border-box;
+}
+.skills__skillset__list--left {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+.skills__skillset__list--right {
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+.skills__skillset__list__entries {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.skills__skillset__list__entries__entry {
+  margin-bottom: 15px;
+}
+.skills__skillset__list__entries__entry__proficiency {
+  font-weight: 700;
+  color: #1d4c6b;
+}
+.skills h3 {
+  color: #1d4c6b;
+  border-bottom: 1px solid #1d4c6b;
+  padding-bottom: 25px;
+}
+.skills h3 i.fas {
+  font-size: 42px;
+  margin-right: 15px;
+}
+.skills__footnote {
+  margin-top: 100px;
 }
 
 .sections-separator {
@@ -121,6 +203,7 @@ body {
   background-color: #f2f2f2;
   padding: 15px;
   margin: 0;
+  padding-bottom: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
