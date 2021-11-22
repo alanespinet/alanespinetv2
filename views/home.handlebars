@@ -46,7 +46,49 @@
 
 
 <section class="portfolio teal-section">
-    <div class="container">
+    {{> sections-separator_gray-to-trans }}
 
+    <div class="container">
+        {{#with data.portfolio_section}}
+            {{#if section_title}}
+                <h2 class="text-center color-white">{{ section_title }}</h2>
+            {{/if}}
+
+            {{#if projects}}
+                <div class="portfolio__projects">
+                    {{#each projects as | project |}}
+                        <div class="portfolio__projects__project">
+                            {{#if project.image}}
+                                <img class="img-fluid" src="{{ project.image }}" alt="">
+                            {{/if}}
+
+                            <div class="portfolio__projects__project__data">
+                                <div class="portfolio__projects__project__data__title">
+                                    {{#if project.name}}
+                                        <h3>{{ project.name }}</h3>
+                                    {{/if}}
+
+                                    {{#if project.type}}
+                                        <p><span>-</span>{{ project.type }}</p>
+                                    {{/if}}
+                                </div>
+                                
+                                <div class="portfolio__projects__project__data__additional">
+                                    {{#if project.technologies}}
+                                        <p>{{ project.technologies }}</p>
+                                    {{/if}}
+
+                                    {{#if project.link}}
+                                        <p><span>-</span><a href="{{ project.link }}" target="_blank">Live Link</a></p>
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            {{/if}}
+        {{/with}}
     </div>
+
+    {{> sections-separator_trans-to-gray }}
 </section>

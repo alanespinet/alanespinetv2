@@ -1,0 +1,59 @@
+.portfolio {
+    position: relative;
+    padding-bottom: 200px;
+
+    h2 {
+        margin-top: 200px;
+    }
+
+    &__projects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 100px;
+
+        &__project {
+            flex-basis: calc(33% - 50px);
+
+            background-color: $gray-color;
+            margin-bottom: 80px;
+
+            &__data {
+                padding: 15px 25px 20px;
+
+                &__title {
+                    padding-bottom: 5px;
+                }
+
+                &__title,
+                &__additional {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                &__title h3,
+                &__title p {
+                    margin: 0;
+                    font-family: $title;
+                    font-size: 1.5rem;
+                    color: $teal-color;
+                }
+
+                &__title h3 {
+                    font-weight: 700;
+                }
+
+                &__title p span,
+                &__additional p span {
+                    margin: 0 10px;
+                }
+
+                &__additional p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+
+}

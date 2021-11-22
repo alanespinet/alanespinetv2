@@ -57,6 +57,24 @@ h3 {
   font-size: 2rem;
 }
 
+a {
+  font-weight: 700;
+  color: #7390a2;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #5a7688;
+}
+
+.color-white {
+  color: #fafafa;
+}
+
 .container {
   max-width: 1600px;
   padding: 15px;
@@ -69,6 +87,11 @@ h3 {
 
 .teal-section {
   background-color: #1d4c6b;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 .hero {
@@ -115,6 +138,9 @@ h3 {
   left: 15px;
 }
 
+.skills {
+  padding-bottom: 60px;
+}
 .skills__skillset {
   display: flex;
   justify-content: space-between;
@@ -160,6 +186,50 @@ h3 {
   margin-top: 100px;
 }
 
+.portfolio {
+  position: relative;
+  padding-bottom: 200px;
+}
+.portfolio h2 {
+  margin-top: 200px;
+}
+.portfolio__projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.portfolio__projects__project {
+  flex-basis: calc(33% - 50px);
+  background-color: #f2f2f2;
+  margin-bottom: 80px;
+}
+.portfolio__projects__project__data {
+  padding: 15px 25px 20px;
+}
+.portfolio__projects__project__data__title {
+  padding-bottom: 5px;
+}
+.portfolio__projects__project__data__title, .portfolio__projects__project__data__additional {
+  display: flex;
+  justify-content: center;
+}
+.portfolio__projects__project__data__title h3, .portfolio__projects__project__data__title p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #1d4c6b;
+}
+.portfolio__projects__project__data__title h3 {
+  font-weight: 700;
+}
+.portfolio__projects__project__data__title p span, .portfolio__projects__project__data__additional p span {
+  margin: 0 10px;
+}
+.portfolio__projects__project__data__additional p {
+  margin-bottom: 0;
+}
+
 .sections-separator {
   height: 200px;
 }
@@ -197,6 +267,18 @@ h3 {
   z-index: 15;
   -webkit-clip-path: polygon(50% 64%, 100% 0, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 64%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+.sections-separator--bottom {
+  bottom: -10px;
+}
+.sections-separator--trans-to-gray--inverted {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  bottom: auto;
+  top: 0;
 }
 
 body {

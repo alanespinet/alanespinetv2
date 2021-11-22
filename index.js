@@ -104,6 +104,56 @@ app.get('/', (req, res) => {
 
     templateInfo['skills_section'] = skills_section;
 
+    const portfolio_section = {
+        section_title: 'Portfolio',
+        projects: [
+            {
+                name: 'ToccoMagico',
+                type: 'Online Store',
+                technologies: 'Shopify API & WordPress',
+                image: 'images/projects/toccomagico.jpg',
+                link: 'https://toccousa.com'
+            },
+            {
+                name: 'ToccoMagico',
+                type: 'Online Store',
+                technologies: 'Shopify API & WordPress',
+                image: 'images/projects/toccomagico.jpg',
+                link: 'https://toccousa.com'
+            },
+            {
+                name: 'ToccoMagico',
+                type: 'Online Store',
+                technologies: 'Shopify API & WordPress',
+                image: 'images/projects/toccomagico.jpg',
+                link: 'https://toccousa.com'
+            },
+            {
+                name: 'ToccoMagico',
+                type: 'Online Store',
+                technologies: 'Shopify API & WordPress',
+                image: 'images/projects/toccomagico.jpg',
+                link: 'https://toccousa.com'
+            },
+            {
+                name: 'ToccoMagico',
+                type: 'Online Store',
+                technologies: 'Shopify API & WordPress',
+                image: 'images/projects/toccomagico.jpg',
+                link: 'https://toccousa.com'
+            },
+            {
+                name: 'ToccoMagico',
+                type: 'Online Store',
+                technologies: 'Shopify API & WordPress',
+                image: 'images/projects/toccomagico.jpg',
+                link: 'https://toccousa.com'
+            }
+        ]
+    };
+
+    templateInfo['portfolio_section'] = portfolio_section;
+
     res.render('home', { 
         data: templateInfo,
         title: 'Full Stack Developer'
