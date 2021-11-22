@@ -66,7 +66,6 @@ a {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
-
 a:hover {
   color: #5a7688;
 }
@@ -203,6 +202,11 @@ a:hover {
   flex-basis: calc(33% - 50px);
   background-color: #f2f2f2;
   margin-bottom: 80px;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 .portfolio__projects__project__data {
   padding: 15px 25px 20px;
@@ -219,6 +223,11 @@ a:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   color: #1d4c6b;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .portfolio__projects__project__data__title h3 {
   font-weight: 700;
@@ -228,6 +237,18 @@ a:hover {
 }
 .portfolio__projects__project__data__additional p {
   margin-bottom: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.portfolio__projects__project:hover {
+  background-color: #222222;
+  cursor: pointer;
+}
+.portfolio__projects__project:hover .portfolio__projects__project__data__title h3, .portfolio__projects__project:hover .portfolio__projects__project__data__title p, .portfolio__projects__project:hover .portfolio__projects__project__data__additional p {
+  color: #fafafa;
 }
 
 .sections-separator {

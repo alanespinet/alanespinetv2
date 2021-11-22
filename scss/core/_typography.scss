@@ -60,15 +60,12 @@ h3 {
 a {
     font-weight: 700;
     color: $link-color;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-}
+    
+    @include transitionable;
 
-a:hover {
-    color: $link-color-hover;
+    &:hover {
+        color: $link-color-hover;
+    }
 }
 
 .color-white {

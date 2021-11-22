@@ -18,6 +18,8 @@
             background-color: $gray-color;
             margin-bottom: 80px;
 
+            @include transitionable(1s);
+
             &__data {
                 padding: 15px 25px 20px;
 
@@ -37,6 +39,8 @@
                     font-family: $title;
                     font-size: 1.5rem;
                     color: $teal-color;
+
+                    @include transitionable;
                 }
 
                 &__title h3 {
@@ -50,7 +54,19 @@
 
                 &__additional p {
                     margin-bottom: 0;
+                    @include transitionable;
                 }
+            }
+
+            &:hover {
+                background-color: $text-color;
+                cursor: pointer;
+            }
+
+            &:hover &__data__title h3,
+            &:hover &__data__title p,
+            &:hover &__data__additional p {
+                color: $light-color;
             }
         }
     }

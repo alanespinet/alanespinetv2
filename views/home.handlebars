@@ -57,7 +57,7 @@
             {{#if projects}}
                 <div class="portfolio__projects">
                     {{#each projects as | project |}}
-                        <div class="portfolio__projects__project">
+                        <div class="portfolio__projects__project" {{#if project.link}} onClick="window.open('{{ project.link }}', '_blank')" {{/if}}>
                             {{#if project.image}}
                                 <img class="img-fluid" src="{{ project.image }}" alt="">
                             {{/if}}
